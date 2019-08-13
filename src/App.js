@@ -3,8 +3,10 @@ import { useSelector, useDispatch } from 'react-redux';
 import { increment, decrement } from './actions';
 
 function App() {
+  // useSelector accesses the state
   const counter = useSelector(state => state.counter);
   const isLogged = useSelector(state => state.isLogged);
+  // gives ability to dispatch actions
   const dispatch = useDispatch();
   
   return (
